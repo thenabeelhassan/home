@@ -1,24 +1,64 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Home Page using React.js
-        </p>
-        <a
-          className="App-link"
-          href="https://resume.thenabeelhassan.com/"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <h1
+      className="col"
+      >
+        Nabeel Hassan
+      </h1>
+      <section
+      id="links"
+      className="col-lg-6 col-md-12 col-sm-12"
+      >
+        <section
+        id="cv"
+        className="col-6"
         >
-          Visit
-        </a>
-      </header>
+          <div>
+            <i 
+            className="i fa fa-file col"
+            >
+            </i>
+          </div>
+          <div
+          className="a"
+          >
+            <a
+            href="https://resume.thenabeelhassan.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col"
+            >
+              curriculum vitae
+            </a>
+          </div>
+        </section>
+        <section
+        id="portfolio"
+        className="col-6"
+        >
+          <div>
+            <i 
+            className="i fa fa-briefcase col">
+            </i>
+          </div>
+          <div
+          className="a"
+          >
+            <a
+            href="https://portfolio.thenabeelhassan.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col"
+            >
+              Portfolio
+            </a>
+          </div>
+        </section>
+      </section>
     </div>
   );
 }
